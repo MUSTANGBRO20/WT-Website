@@ -5,16 +5,15 @@
        <style>
           
           .background{
-          background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(1.jpg);
+          background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(6.jpg);
           background-size:cover;
           height: 100vh;
-    width: 100%;
+          background-position: center;
           }
            .title{
                height: 100px;
                padding-top: 20px;
                border-radius: 0px;
-               background-color: black ;
                text-align:center;
                font-family:Berlin sans fb;
             }
@@ -29,22 +28,22 @@
                 font-family:FOOTLIGHT MT LIGHT;
                 font-size:1.2vw;
                 border:collapse;
-                border:1px solid black;
-                color:lightgreen;
+                border:2px solid black;
+                color: white;
             }
             .table tr{
-              border:1px solid black;
-              padding:2px;
+              border:2px solid black;
+              padding:4px;
               
             }
             .table td{
-              border:1px solid black;
-              padding:2px;
+              border:2px solid black;
+              padding:4px;
               
             }
             .table th{
-              border:1px solid black;
-              padding:2px;
+              border:2px solid black;
+              padding:px;
               
             }
             
@@ -63,7 +62,6 @@
                 height: 10%;
                 bottom: 0px;
                 width: 100%;
-                background-color: rgb(0, 0, 0);
                
                 text-align: center;
                 font-family:Berlin sans fb;
@@ -74,7 +72,7 @@
     </head>
     <body>
     <div class="background">
-        <div class="title"><h1 style="color: white;">Hotel MUSTANGB<br>Menu Card</h1></div>
+        <div class="title"><h1 style="color: white;">Hotel MUSTANG<br>Menu Card</h1></div>
         
          <div class="cont">
             <h1>Select the menu item for list given below</h1>
@@ -131,14 +129,14 @@
             <!-- <div class="footer1">
                 <div class="container-fluid"> -->
                     <p style="color: white;">&copy; Copyright 2020</p>
-                    <a href="mailto:srkotwal@mitaoe.ac.in">srkotwal@mitaoe.ac.in</a></p>
+                    <a href="email: vasarode@gamil.ac.in">vasarode@mitae.ac.in</a></p>
                     <!-- </div>
               </div> -->
         </footer>
             
         <script src="jquery-3.5.1.min.js"></script>
         <script>
-        let base_url = "http://localhost/php/Assignment4/details.php";
+        let base_url = "details.php";
         $("document").ready(function(){
             getRestaurantMenuList();
             document.querySelector("#restaurant").addEventListener("change",getMenuItemList);
